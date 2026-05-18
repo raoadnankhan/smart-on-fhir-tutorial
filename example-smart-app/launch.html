@@ -27,7 +27,9 @@
     <script>
       FHIR.oauth2.authorize({
         'client_id': '91fbc62a-a02b-4089-ba20-96b8fcd2cf3e',
-        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile',
+        'redirectUri': 'https://raoadnankhan.github.io/smart-on-fhir-tutorial/example-smart-app/', // Must match Cerner Console
+        'iss': 'https://fhir-ehr-code.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d'
       });
     </script>
     <div class="spinner">
